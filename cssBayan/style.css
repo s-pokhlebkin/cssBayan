@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  color: blue;
+  font-size: 2rem;
+}
+
+.section {
+  //width: 500px;
+}
+.section-content {
+  padding: 0 20px;
+  background-color: white;
+  //display: none;
+  overflow: hidden;
+  height: 0;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.section-label {
+  background-color: #0644b6;
+  color: #eee;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+  display: block;
+}
+
+.section-label:after {
+  content: "+";
+  position: absolute;
+  right: 3em;
+  width: 1em;
+  height: 1em;
+}
+
+.section-label:hover {
+  background-color: #0156f5;
+}
+
+input:checked + label:after {
+  content: "-";
+}
+
+input[name="acc"]:checked ~ .section-content {
+  display: box;
+  color: red;
+  height: 100%;
+  background-color: antiquewhite;
+  transition: all 0.3s;
+}
