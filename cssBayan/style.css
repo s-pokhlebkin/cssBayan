@@ -8,7 +8,11 @@ h1 {
   font-size: 3rem;
   margin: 0.5em 0em;
 }
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .container {
   margin: 0 auto;
   width: 80%;
@@ -81,7 +85,20 @@ input[name="acc"]:checked ~ .section-content {
   display: flex;
   justify-content: center;
 }
-
+.Pull-request {
+  text-decoration: none;
+  color: rgb(123, 122, 122);
+  transition: all 0.3 ease;
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(123, 122, 122);
+  transition: all 0.3 ease;
+}
+a:hover {
+  color: coral;
+  transition: all 0.3 ease;
+}
 @media only screen and (min-width: 320px) {
   .container {
     width: 80%;
